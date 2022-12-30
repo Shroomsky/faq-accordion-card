@@ -16,17 +16,18 @@
 
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
   scroll-behavior: smooth;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background: linear-gradient(var(--Soft_violet), var(--Soft_blue));
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   font-family: "Kumbh Sans", sans-serif;
 }
 
@@ -38,7 +39,6 @@ button {
 
 .wrapper {
   flex: 1 0 auto;
-  margin: auto;
   margin-top: 14vh;
   max-width: 375px;
 }
@@ -78,6 +78,7 @@ button {
   background-color: #fff;
   padding: 20px;
   font-size: 12px;
+  margin-bottom: 40px;
 }
 .card h1 {
   text-transform: uppercase;
@@ -148,7 +149,10 @@ details[open] > summary::after {
 
 .footer {
   flex-shrink: 0;
-  padding: 20px;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
   color: #fff;
   background-color: var(--Very_dark_desaturated_blue);
 }

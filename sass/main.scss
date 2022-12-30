@@ -34,16 +34,17 @@
 }
 html,
 body {
-	height: 100vh;
+	min-height: 100vh;
 	scroll-behavior: smooth;
 }
 body {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	background: linear-gradient((var(--Soft_violet), var(--Soft_blue)));
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
 	font-family: "Kumbh Sans", sans-serif;
 }
 a,
@@ -54,7 +55,6 @@ button {
 //=================Wrapper=============//
 .wrapper {
 	flex: 1 0 auto;
-	margin: auto;
 	margin-top: 14vh;
 	max-width: 375px;
 }
@@ -99,6 +99,7 @@ button {
 	background-color: #fff;
 	padding: 20px;
 	font-size: 12px;
+	margin-bottom: 40px;
 	//======FAQ====//
 	& h1 {
 		text-transform: uppercase;
@@ -174,8 +175,10 @@ details[open] > summary {
 //=====================Footer================//
 .footer {
 	flex-shrink: 0;
-
-	padding: 20px;
+	position: relative;
+	bottom: 0;
+	padding: 10px;
+	width: 100%;
 	color: #fff;
 	background-color: var(--Very_dark_desaturated_blue);
 	& .attribution {
@@ -216,7 +219,6 @@ details[open] > summary {
 	}
 	.img-top {
 		display: none;
-		
 	}
 	.img-top-pattern {
 		display: none;
@@ -229,20 +231,19 @@ details[open] > summary {
 		height: 100%;
 		width: 100%;
 		position: relative;
-	
 	}
 	.img-box {
 		display: block;
 	}
-	.ilustration{
+	.ilustration {
 		overflow: hidden;
 	}
-	.box{
+	.box {
 		position: absolute;
 		left: -92px;
 		top: 35%;
 	}
-	
+
 	details > summary:hover {
 		color: var(--Soft_red);
 	}
